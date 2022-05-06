@@ -61,9 +61,10 @@
 <p>3.请确保勾选”使用管理员身份创建这个任务“</p>
 <p>4.输入”Powershell” （忽略“”）</p>
 <p>5.在Powershell中，输入以下两条命令并回车：</p>
-<p><code>$manifest = (Get-AppxPackage Microsoft.WindowsStore).InstallLocation + &#39;\AppxManifest.xml&#39; ; Add-AppxPackage -DisableDevelopmentMode -Register $manifest</code></p>
-<p><code>Get-AppXPackage -AllUsers |Where-Object &#123;$_.InstallLocation -like &quot;*SystemApps*&quot;&#125;</code></p>
-<p>`` </p>
+<pre class=" language-powershell"><code class="language-powershell"><span class="token variable">$manifest</span> = <span class="token punctuation">(</span>Get<span class="token operator">-</span>AppxPackage Microsoft<span class="token punctuation">.</span>WindowsStore<span class="token punctuation">)</span><span class="token punctuation">.</span>InstallLocation <span class="token operator">+</span> <span class="token string">'\AppxManifest.xml'</span> <span class="token punctuation">;</span> Add<span class="token operator">-</span>AppxPackage <span class="token operator">-</span>DisableDevelopmentMode <span class="token operator">-</span>Register <span class="token variable">$manifest</span>
+</code></pre>
+<pre class=" language-powershell"><code class="language-powershell">Get<span class="token operator">-</span>AppXPackage <span class="token operator">-</span>AllUsers <span class="token punctuation">|</span><span class="token function">Where-Object</span> &amp;<span class="token comment" spellcheck="true">#123;$_.InstallLocation -like "*SystemApps*"&amp;#125;</span>
+</code></pre>
 <p>6.完成后关闭Powershell</p>
 <p>7.重启您的计算机即可。</p>
 <p>社区问题链接：<a target="_blank" rel="noopener" href="https://answers.microsoft.com/zh-hans/windows/forum/all/win10%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8/41e4a6f7-7cd9-475e-8949-7ed50328949b?auth=1">传送门</a></p>
