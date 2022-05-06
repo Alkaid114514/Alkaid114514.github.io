@@ -9,24 +9,23 @@
 ]]></content>
   </entry>
   <entry>
-    <title>解决win10资源管理器(桌面任务栏)频繁假死问题</title>
+    <title></title>
     <url>/2022/05/06/20220506-0740/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近装了ltsc2021,发现桌面和任务栏频繁假死，且无法呼出任务管理器，只得注销重新登陆，搜索了很久才在Microsoft社区找到了解决办法</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>最近装了ltsc2021,发现桌面和任务栏频繁假死，且无法呼出任务管理器，只得注销重新登陆，搜索了很久才在Microsoft社区找到了解决办法</strong></p>
 <p>关于资源管理器假死的问题，建议您尝试以下方案：</p>
 <p>1.打开任务管理器（或者点击CTRL+Shift+ESC）</p>
 <p>2.点击“文件” - “运行新任务”</p>
 <p>3.请确保勾选”使用管理员身份创建这个任务“</p>
 <p>4.输入”Powershell” （忽略“”）</p>
-<p>5.在Powershell中，输入以下两条命令：（第二条命令需要点击回车）</p>
-<p>$manifest = (Get-AppxPackage Microsoft.WindowsStore).InstallLocation + ‘\AppxManifest.xml’ ; Add-AppxPackage -DisableDevelopmentMode -Register $manifest<br>Get-AppXPackage -AllUsers |Where-Object {$_.InstallLocation -like “<em>SystemApps</em>“}</p>
+<p>5.在Powershell中，输入以下两条命令并回车：</p>
+<p><code>$manifest = (Get-AppxPackage Microsoft.WindowsStore).InstallLocation + &#39;\AppxManifest.xml&#39; ; Add-AppxPackage -DisableDevelopmentMode -Register $manifest</code></p>
+<p><code>Get-AppXPackage -AllUsers |Where-Object &#123;$_.InstallLocation -like &quot;*SystemApps*&quot;&#125;</code></p>
+<p>`` </p>
 <p>6.完成后关闭Powershell</p>
 <p>7.重启您的计算机即可。</p>
 <p>社区问题链接：<a href="https://answers.microsoft.com/zh-hans/windows/forum/all/win10%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8/41e4a6f7-7cd9-475e-8949-7ed50328949b?auth=1">传送门</a></p>
 <p><img src="https://raw.githubusercontent.com/Alkaid114514/Pictures/main/imgs/202205060738695.png"></p>
 ]]></content>
-      <tags>
-        <tag>问题解决</tag>
-      </tags>
   </entry>
   <entry>
     <title>hny</title>
