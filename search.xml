@@ -32,11 +32,9 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>解决禁用Microsoft商店自动更新后wsappx仍然运行的问题</title>
     <url>/2022/05/06/20220506-1741/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>—解决禁用Microsoft商店自动更新后wsappx仍然运行的问题<br>title: My awesome title<br>date: 2022-05-06 17:38:45<br>categories:<br>    - 系统优化<br>tags:<br>    - 问题解决<br>cover: <a href="https://raw.githubusercontent.com/Alkaid114514/Pictures/main/imgs/202205061909618.png">https://raw.githubusercontent.com/Alkaid114514/Pictures/main/imgs/202205061909618.png</a></p>
-<hr>
-<p><em><strong>解决禁用Microsoft商店自动更新后wsappx仍然运行的问题</strong></em></p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em><strong>解决禁用Microsoft商店自动更新后wsappx仍然运行的问题</strong></em></p>
 <p>解决方法：</p>
 <p>在管理员PowerShell中输入命令卸载应M用商店</p>
 <pre class=" language-powershell"><code class="language-powershell">Get<span class="token operator">-</span>AppxPackage <span class="token operator">*</span>WindowsStore<span class="token operator">*</span> <span class="token punctuation">|</span> Remove<span class="token operator">-</span>AppxPackage
@@ -50,6 +48,12 @@
 <p>之后打开商店再关闭自动更新即可</p>
 <p>（此问题的原因似乎与系统更新有关）</p>
 ]]></content>
+      <categories>
+        <category>系统优化</category>
+      </categories>
+      <tags>
+        <tag>问题解决</tag>
+      </tags>
   </entry>
   <entry>
     <title>hny</title>
