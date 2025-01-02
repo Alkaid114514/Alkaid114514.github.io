@@ -140,22 +140,11 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>时间轴</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/footer_trans.css"/>
-      <url>/css/footer_trans.css</url>
-      
-        <content type="html"><![CDATA[#footer {background: rgba(255, 255, 255, .15);color: #000;border-top-right-radius: 20px;border-top-left-radius: 20px;-webkit-backdrop-filter: saturate(100%) blur(5px);backdrop-filter: saturate(100%) blur(5px)}#footer::before {background: rgba(255, 255, 255, .15);}#footer #footer-wrap {color: var(--font-color);}#footer #footer-wrap a {color: var(--font-color);}]]></content>
       
     </entry>
     
@@ -173,9 +162,31 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/css/code_font.css"/>
+      <url>/css/code_font.css</url>
+      
+        <content type="html"><![CDATA[@font-face {    font-family: 'JetBrains Mono';    src: url('../font/JetBrainsMono-Medium.woff2') format('woff2'); /* 引入 ttf 字体文件 */    font-weight: normal;    font-style: normal;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/footer_trans.css"/>
+      <url>/css/footer_trans.css</url>
+      
+        <content type="html"><![CDATA[#footer {background: rgba(255, 255, 255, .15);color: #000;border-top-right-radius: 20px;border-top-left-radius: 20px;-webkit-backdrop-filter: saturate(100%) blur(5px);backdrop-filter: saturate(100%) blur(5px)}#footer::before {background: rgba(255, 255, 255, .15);}#footer #footer-wrap {color: var(--font-color);}#footer #footer-wrap a {color: var(--font-color);}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -195,9 +206,9 @@
     
     
     <entry>
-      <title>时间轴</title>
-      <link href="/archives/index.html"/>
-      <url>/archives/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

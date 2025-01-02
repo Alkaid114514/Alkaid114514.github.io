@@ -1,0 +1,7 @@
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../font/JetBrainsMono-Medium.woff2') format('woff2'); /* 引入 ttf 字体文件 */
+    font-weight: normal;
+    font-style: normal;
+}
