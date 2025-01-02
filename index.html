@@ -1,494 +1,186 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-  <!-- 元数据 -->
-  <meta charset="utf-8">
-  
-    <link rel="icon" href="/assets/favicon.png">
-  
-  
-  <title>Hexo</title>
-  <link rel="canonical" href="http://example.com/index.html">
-  <meta name="author" content="John Doe" />
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="robots" content="index,follow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="format-detection" content="telphone=no, email=no" />
-  
-    <meta name="keywords" content="" />
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Alkaid的技术站</title><meta name="author" content="Alkaid"><meta name="copyright" content="Alkaid"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Alkaid的技术站">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="Alkaid的技术站">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/avatar.png">
+<meta property="article:author" content="Alkaid">
 <meta name="twitter:card" content="summary">
-  
-  <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kr-core.min.css" media="all"></link>
-  
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/highlight.js/night-eighties.min.css" media="all"></link>
-  
-  <link rel="stylesheet" id="theme-light-css" href="/css/kr-theme/light.min.css" media="all"></link>
-  <link rel="stylesheet" id="theme-dark-css" href="/css/kr-theme/dark.min.css" media="(prefers-color-scheme: dark)"></link>
-  <script src="/js/kr-theme.min.js"></script>
-  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></link>
-  
-    <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></link>
-  
-  
-    <link rel="stylesheet" href="/vendors/viewerjs@1.11.6/dist/viewer.min.css"></link>
-  
-  <!-- 不得不预先加载的一些JS文件 -->
-  
-    <script src="/vendors/qr-code-styling@1.6.0-rc.1/lib/qr-code-styling.js"></script>
-  
-  <!-- 自定义站点横幅和背景 -->
-  <style>
-    
-      .kratos-cover.kratos-cover-2 {
-        background-image: url('https://dev.krt.moe/demo-assets/banner.webp');
-      }
-      html[data-theme="dark"] .kratos-cover.kratos-cover-2 {
-        background-image: url('https://dev.krt.moe/demo-assets/banner_dark.webp');
-      }
-    
-    
-      @media(min-width:768px) {
-        body.custom-background {
-          background-image: url('https://dev.krt.moe/demo-assets/bg.webp');
+<meta name="twitter:image" content="http://example.com/img/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
         }
-        html[data-theme="dark"] body.custom-background {
-          background-image: url('https://dev.krt.moe/demo-assets/bg.webp');
-        }
+        return value
       }
-    
-    
-      .widget-kratos-about .photo-background {
-        background-image: url('/images/default.webp');
-      }
-      html[data-theme="dark"] .widget-kratos-about .photo-background {
-        background-image: url('/images/default.webp');
-      }
-    
-  </style>
-
-  <!-- 额外的追加注入项 -->
-  
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-    <body class="custom-background">
-        <div id="kratos-wrapper">
-    <div id="kratos-page">
-        <div id="kratos-header">
-            <header id="kratos-desktop-topnav" class="kratos-topnav">
-                <div class="container">
-                    <div class="nav-header">
-                        <nav id="kratos-menu-wrap">
-                            <ul id="kratos-primary-menu" class="sf-menu">
-                                
-                                    <li>
-                                        
-                                            <a href="/">
-                                        
-                                            
-                                                <i class="fa fa-home"></i>
-                                            
-                                            首页
-                                        </a>
-                                        
-                                    </li>
-                                
-                                    <li>
-                                        
-                                            <a href="/archives/">
-                                        
-                                            
-                                                <i class="fa fa-file"></i>
-                                            
-                                            档案馆
-                                        </a>
-                                        
-                                    </li>
-                                
-                                    <li>
-                                        
-                                            <a>
-                                        
-                                            
-                                                <i class="fa fa-link"></i>
-                                            
-                                            链接
-                                        </a>
-                                        
-                                            <ul class="sub-menu">
-                                                
-                                                    <li>
-                                                        <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">
-                                                            
-                                                                <i class="fa fa-code"></i>
-                                                            
-                                                            代码仓库
-                                                        </a>
-                                                    </li>
-                                                
-                                                    <li>
-                                                        <a target="_blank" rel="noopener" href="https://wiki.krt.moe">
-                                                            
-                                                                <i class="fa fa-book"></i>
-                                                            
-                                                            项目文档
-                                                        </a>
-                                                    </li>
-                                                
-                                            </ul>
-                                        
-                                    </li>
-                                
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header>
-            <header id="kratos-mobile-topnav" class="kratos-topnav">
-                <div class="container">
-                    <div class="color-logo"><a href="/">Hexo</a></div>
-                    <div id="kratos-nav-toggle-wrapper" class="nav-toggle">
-                        <a id="kratos-nav-toggle" class="kratos-nav-toggle">
-                            <i></i>
-                        </a>
-                    </div>
-                </div>
-            </header>
-        </div>
-        <div class="kratos-start kratos-hero-2">
-            <!-- <div class="kratos-overlay"></div> -->
-            <div class="kratos-cover kratos-cover-2 text-center">
-                <div class="desc desc2 animate-box">
-                    <a href="/">
-                        <h2>Hexo</h2> <br />
-                        <span></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div id="kratos-blog-post">
-            <div class="container">
-                <div id="main" class="row">
-
-
-        
-
-            
-
-            <section class="kr-main-col col-md-8">
-
-        
-
-            <!-- Breadcrumb for tag & category page -->
-
-
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-    <div class="kratos-entry-border clearfix">
-        
-        <div class="kratos-entry-post-main">
-            
-            
-                <div class="kratos-entry-thumb">
-                    <a href="/2025/01/01/hello-world/">
-                        <img class="kratos-entry-thumb-img" src="/images/default.webp" alt="/Hello%20World">
-                    </a>
-                </div>
-            
-            <div class="kratos-entry-post-inner">
-                <header class="kratos-entry-header">
-                        
-                    <h2 class="kratos-entry-title"><a href="/2025/01/01/hello-world/" itemprop="mainEntityOfPage"><span itemprop="name headline">Hello World</span></a>
-                </header>
-                <div class="kratos-entry-content">
-                    <p itemProp="description">
-                        
-                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
-                        
-                    </p>
-                </div>
-            </div>
-        </div>
-        <footer class="kratos-entry-post-meta">
-            <span class="pull-left">
-                <time datetime="2025-01-01T06:52:26.237Z" itemprop="datePublished">
-                    <a><i class="fa fa-calendar"></i> 2025-01-01</a>
-                </time>
-                <a>
-                    
-                </a>
-                
-                
-            </span>
-            <span class="pull-right">
-                <a class="read-more" href="/2025/01/01/hello-world/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-            </span>
-        </footer>
-    </div>
-</article>
-    
-
-
-
-
-
-
-
-
-        
-
-            </section>
-
-            
-                
-
-<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
-    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
-    
-        <div class="sticky-area">
-    
-    
-                <aside id="krw-about" class="widget widget-kratos-about clearfix">
-    <div class="photo-background"></div>
-    <div class="photo-wrapper clearfix">
-        <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/user.svg" alt="John Doe" loading="lazy" decoding="auto" />
-        </div>
-    </div>
-    <div class="textwidget">
-        <p class="text-center"></p>
-    </div>
-    <div class="site-meta">
-        <a class="meta-item" href="/archives/">
-            <span class="title">
-                文章
-            </span>
-            <span class="count">
-                1
-            </span>
-        </a>
-        <a class="meta-item" href="/categories/">
-            <span class="title">
-                分类
-            </span>
-            <span class="count">
-                0
-            </span>
-        </a>
-        <a class="meta-item" href="/tags/">
-            <span class="title">
-                标签
-            </span>
-            <span class="count">
-                0
-            </span>
-        </a>
-    </div>
-</aside>
-            
-                
-
-            
-                
-            
-                
-  <aside id="krw-posts" class="widget widget-kratos-posts">
-  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
-  <div class="tab-content">
-      <ul class="list-group">
-        
-        
-          
-          
-            <a class="list-group-item" href="/2025/01/01/hello-world/"><i class="fa fa-book"></i> Hello World</a>
-            
-          
-        
-      </ul>
-  </div>
-  </aside>
-
-            
-    </div>
-</section>
-            
-
-        
-
-                </div>
-    </div>
-</div>
-
-<footer>
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 footer-list text-center">
-                    <ul class="kratos-social-icons">
-                        
-                            <li>
-                                <a href="https://github.com/kratos-rebirth" target="_blank" rel="nofollow">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                        
-                            <li>
-                                <a href="/atom.xml" target="_blank" rel="nofollow">
-                                    <i class="fa fa-rss"></i>
-                                </a>
-                            </li>
-                        
-                    </ul>
-                    <ul class="kratos-copyright">
-                        <div>
-                            <li>&copy; 2025 Hexo 版权所有.</li>
-                            <li>本站已在风雨中飘摇<span id="kr-since">Loading...</span></li>
-                        </div>
-                        <div>
-                            <li>自豪地使用 <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a> 主题</li>
-                            <li>站点由 <a href="https://github.com/Candinya/Kratos-Rebirth/graphs/contributors" target="_blank">John Doe</a> 用 <i class="fa fa-heart" style="color:#d43f57"></i> 搭建</li>
-                        </div>
-                        <!-- 额外的追加注入项 -->
-                        
-                            <div>
-                                
-                                    <li>由 <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a> 强力驱动</li>
-                                
-                                    <li>在 <a href="https://github.io" target="_blank">Github Pages</a> 暖心托管</li>
-                                
-                            </div>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="kr-tool text-center">
-            <div class="tool">
-                
-                    <div class="box search-box">
-                        <a href="/search">
-                            <span class="fa fa-search"></span>
-                        </a>
-                    </div>
-                
-                <div class="box theme-box" id="theme-toggle">
-                    <span class="fa fa-adjust"></span>
-                </div>
-            </div>
-            <div id="gotop-box" class="box gotop-box">
-                <span class="fa fa-chevron-up"></span>
-            </div>
-        </div>
-    </div>
-</footer>
-</div>
-</div>
-
-
-    <div id="kr-donate-modal" class="kr-modal">
-    <div class="kr-modal-bg" onclick="krCloseDonateModal()"></div>
-    <div class="kr-modal-content">
-        <div class="kr-modal-header">
-            <div class="kr-modal-icon">
-                <i class="fa fa-bitcoin"></i>
-            </div>
-            <div class="kr-modal-title">赞助喵</div>
-            <button class="kr-modal-close" onclick="krCloseDonateModal()">
-                <i class="fa fa-times-circle"></i>
-            </button>
-        </div>
-        <div class="kr-modal-body">
-            <div class="kr-donate-message">非常感谢您的喜欢！ <i class="fa fa-heart" style="color:#d43f57"></i></div>
-            <div class="kr-donate-qr" id="kr-donate-qr">
-                
-                    <img class="kr-donate-placeholder" src="https://dev.krt.moe/demo-assets/donate.webp" alt="赞助喵" />
-                
-            </div>
-            <div class="kr-donate-platforms">
-                
-                    
-                        <button class="kr-donate-platform-button" style="color: skyblue;" title="模拟支付" onclick="krDonateModalShowPlatformQR('example_payment', 'skyblue')">
-                            <i class="fa fa-credit-card"></i>
-                        </button>
-                    
-                
-            </div>
-        </div>
-    </div>
-</div>
-<script defer src="/js/kr-modal/donate.min.js"></script>
-
-
-
-
-    <div id="kr-share-modal" class="kr-modal">
-    <div class="kr-modal-bg" onclick="krCloseShareModal()"></div>
-    <div class="kr-modal-content">
-        <div class="kr-modal-header">
-            <div class="kr-modal-icon">
-                <i class="fa fa-share-alt"></i>
-            </div>
-            <div class="kr-modal-title">分享这一刻</div>
-            <button class="kr-modal-close" onclick="krCloseShareModal()">
-                <i class="fa fa-times-circle"></i>
-            </button>
-        </div>
-        <div class="kr-modal-body">
-            <div class="kr-share-message">让朋友们也来瞅瞅！</div>
-            <div class="kr-share-qr" id="kr-share-qr"></div>
-            <div class="kr-share-platforms">
-                
-                    <button class="kr-share-platform-button" style="color: #62b6e7;" title="喵窝" onclick="krShareModalOpenPlatform('https://nya.one/share?text=%3E%20$TITLE%0A%3E%0A%3E%20$SUMMARY%0A----%20$SITE%0A%0A$URL')">
-                        <svg fill="currentColor" width="18" height="18" viewBox="0 0 329 388"><path d="M0,36.226c0,-19.993 16.233,-36.226 36.226,-36.226c13.788,0 25.787,7.719 31.908,19.068l188.366,229.845l0,-111.259c-6.356,5.508 -14.645,8.843 -23.707,8.843c-19.994,0 -36.226,-16.232 -36.226,-36.226c-0,-8.551 2.968,-16.413 7.93,-22.613l-0.015,-0.013l56.614,-69.08c6.2,-11.073 18.047,-18.565 31.63,-18.565c19.994,0 36.227,16.233 36.227,36.226l-0,314.644c-0,19.994 -16.233,36.226 -36.227,36.226c-13.166,0 -24.701,-7.039 -31.044,-17.555l-189.229,-230.899l-0,212.228c-0,19.994 -16.233,36.226 -36.227,36.226c-19.993,0 -36.226,-16.232 -36.226,-36.226l0,-314.644Z" /></svg>
-                    </button>
-                
-            </div>
-        </div>
-    </div>
-</div>
-<script defer src="/js/kr-modal/share.min.js"></script>
-
-
-
-<!-- 额外的追加注入项 -->
-
-
-        <script>
-    if (!window.kr) {
-        window.kr = {};
     }
-    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
-    window.kr.siteRoot = "/";
-</script>
 
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
 
-  <script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
 
-
-
-  <script defer src="/vendors/viewerjs@1.11.6/dist/viewer.min.js"></script>
-
-
-<script defer src="/js/kr-core.min.js"></script>
-
-
-  <script defer src="/js/kr-pjax.min.js"></script>
-
-
-<!-- 额外的追加注入项 -->
-
-
-    </body>
-</html>
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Alkaid的技术站',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/footer_trans.css"><link rel="stylesheet" href="/css/background_color.css"><meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/./img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url(./img/day.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Alkaid的技术站</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Alkaid的技术站</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/Alkaid114514" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2025/01/01/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2025-01-01T13:41:42.000Z" title="发表于 2025-01-01 21:41:42">2025-01-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Hexo/">Hexo</a></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick Start Create a new post 1$ hexo new &quot;My New Post&quot; More info: Writing Run server 1$ hexo server More info: Server Generate static files 1$ hexo generate More info: Generating Deploy to remote sites 1$ hexo deploy More info: Deployment </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/17/2312171546-math/" title="圆锥曲线二级结论">圆锥曲线二级结论</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-16T23:47:18.000Z" title="发表于 2023-12-17 07:47:18">2023-12-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%AB%98%E8%80%83/">高考</a></span></div><div class="content">1. 圆幂定理 有圆◯MA,B,C,D 四点在圆上，∣AD∣ 与 ∣BC∣ 交点为 T可得：∵ΔATB∼ΔCTD∴TATC=TBTD\text{有圆} \bigcirc M \\ A, B, C, D \text{ 四点在圆上，}\vert AD \vert \text{ 与 } \vert BC \vert \text{ 交点为 } T \\ \text{可得：} \\ \because \Delta ATB \sim \Delta CTD \\ \therefore \frac{TA}{TC} = \frac{TB}{TD} 有圆◯MA,B,C,D 四点在圆上，∣AD∣ 与 ∣BC∣ 交点为 T可得：∵ΔATB∼ΔCTD∴TCTA​=TDTB​ 2. 求曲线上点的切线的公式 圆的切线公式 点 A 在曲线 C 上，A(x0,y0)C:x2a2+y2b2=1⇓切线 l:x0xa2+y0yb2=1\text{点 } A \text{ 在曲线 } C \text{ 上，} A(x_0, y_0) \\ C: \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/12/15/2312151819_cpp_printf/" title="C++ printf() 的使用">C++ printf() 的使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-15T10:19:25.000Z" title="发表于 2023-12-15 18:19:25">2023-12-15</time></span></div><div class="content">1. 转换说明符 %s 字符串 %a 浮点数、十六进制bai数字和p-记法(C99) %c 一个字符 %d 有符号十进制整数 %e 浮点数、e-记数法 %f 浮点数、十进制记数法 %g 根据数值不同自动选择％f或％e %i 有符号十进制数(与％d相同) %o 无符号八进制整数 %p 指针 %u 无符号十进制整数 %x 使用十六进制数字0f的无符号十六进制整数 %% 打印一个百分号 ps: 如果使用printf()打印std::string出现乱码，则可使用std::string.c_str() </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/05/06/20220506%201741/" title="解决禁用Microsoft商店自动更新后wsappx仍然运行的问题">解决禁用Microsoft商店自动更新后wsappx仍然运行的问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-06T09:38:45.000Z" title="发表于 2022-05-06 17:38:45">2022-05-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/">系统优化</a></span></div><div class="content">解决禁用Microsoft商店自动更新后wsappx仍然运行的问题 解决方法： 在管理员PowerShell中输入命令卸载应M用商店 12Get-AppxPackage *WindowsStore*Remove-AppxPackage 再输入命令，重新安装商店 12get-appxpackage *store*remove-Appxpackage 再执行以下命令 1add-appxpackage -register &quot;C:\Program Files\WindowsApps\*Store*\AppxManifest.xml&quot; -disabledevelopmentmode 之后打开商店再关闭自动更新即可 （此问题的原因似乎与系统更新有关） </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/05/06/20220506%200740/" title="解决win10资源管理器(桌面任务栏)频繁假死">解决win10资源管理器(桌面任务栏)频繁假死</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-06T02:47:43.000Z" title="发表于 2022-05-06 10:47:43">2022-05-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/">系统优化</a></span></div><div class="content">最近装了ltsc2021,发现桌面和任务栏频繁假死，且无法呼出任务管理器，只能注销重新登录，搜索了好久终于在Microsoft社区找到了解决办法 关于资源管理器假死的问题，建议您尝试以下方案： 1.打开任务管理器（或者点击CTRL+Shift+ESC） 2.点击“文件” - “运行新任务” 3.请确保勾选”使用管理员身份创建这个任务“ 4.输入”Powershell&quot; （忽略“”） 5.在Powershell中，输入以下两条命令并回车： 1$manifest = (Get-AppxPackage Microsoft.WindowsStore).InstallLocation + &#x27;\AppxManifest.xml&#x27; ; Add-AppxPackage -DisableDevelopmentMode -Register $manifest 1Get-AppXPackage -AllUsers |Where-Object &#123;$_.InstallLocation -like...</div></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/./img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Alkaid</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Alkaid114514" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/01/hello-world/" title="Hello World">Hello World</a><time datetime="2025-01-01T13:41:42.000Z" title="发表于 2025-01-01 21:41:42">2025-01-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/17/2312171546-math/" title="圆锥曲线二级结论">圆锥曲线二级结论</a><time datetime="2023-12-16T23:47:18.000Z" title="发表于 2023-12-17 07:47:18">2023-12-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/12/15/2312151819_cpp_printf/" title="C++ printf() 的使用">C++ printf() 的使用</a><time datetime="2023-12-15T10:19:25.000Z" title="发表于 2023-12-15 18:19:25">2023-12-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/06/20220506%201741/" title="解决禁用Microsoft商店自动更新后wsappx仍然运行的问题">解决禁用Microsoft商店自动更新后wsappx仍然运行的问题</a><time datetime="2022-05-06T09:38:45.000Z" title="发表于 2022-05-06 17:38:45">2022-05-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/06/20220506%200740/" title="解决win10资源管理器(桌面任务栏)频繁假死">解决win10资源管理器(桌面任务栏)频繁假死</a><time datetime="2022-05-06T02:47:43.000Z" title="发表于 2022-05-06 10:47:43">2022-05-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Hexo/"><span class="card-category-list-name">Hexo</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%B3%BB%E7%BB%9F%E4%BC%98%E5%8C%96/"><span class="card-category-list-name">系统优化</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%AB%98%E8%80%83/"><span class="card-category-list-name">高考</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/C/" style="font-size: 1.1em; color: #999">C++</a> <a href="/tags/%E9%AB%98%E8%80%83%E6%95%B0%E5%AD%A6/" style="font-size: 1.1em; color: #999">高考数学</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/Windows/" style="font-size: 1.5em; color: #99a9bf">Windows</a> <a href="/tags/Hexo/" style="font-size: 1.1em; color: #999">Hexo</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/01/">
+            <span class="card-archive-list-date">
+              一月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2023/12/">
+            <span class="card-archive-list-date">
+              十二月 2023
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2022/05/">
+            <span class="card-archive-list-date">
+              五月 2022
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">941</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-01-01T14:37:48.024Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2025 By Alkaid</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
