@@ -34,35 +34,6 @@
     
     <entry>
       
-        <title>Hello World</title>
-      
-      <link href="/2025/01/01/hello-world/"/>
-      <url>/2025/01/01/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start">Quick Start</h2><h3 id="create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      
         <title>圆锥曲线二级结论</title>
       
       <link href="/2023/12/17/2312171546-math/"/>
@@ -169,17 +140,6 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/background_color.css"/>
-      <url>/css/background_color.css</url>
-      
-        <content type="html"><![CDATA[/* 页面背景 *//* #body-wrap {background: linear-gradient(90deg, #92acd9, #c8d6ae);} */#body-wrap {background: linear-gradient(90deg,rgba(247, 149, 51, 0.1) 0,rgba(243, 112, 85, 0.1) 15%,rgba(239, 78, 123, 0.1) 30%,rgba(161, 102, 171, 0.1) 44%,rgba(80, 115, 184, 0.1) 58%,rgba(16, 152, 173, 0.1) 72%,rgba(7, 179, 155, 0.1) 86%,rgba(109, 173, 186, 0.1) 100%);}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -196,6 +156,28 @@
       <url>/css/footer_trans.css</url>
       
         <content type="html"><![CDATA[#footer {background: rgba(255, 255, 255, .15);color: #000;border-top-right-radius: 20px;border-top-left-radius: 20px;-webkit-backdrop-filter: saturate(100%) blur(5px);backdrop-filter: saturate(100%) blur(5px)}#footer::before {background: rgba(255, 255, 255, .15);}#footer #footer-wrap {color: var(--font-color);}#footer #footer-wrap a {color: var(--font-color);}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/background_color.css"/>
+      <url>/css/background_color.css</url>
+      
+        <content type="html"><![CDATA[/* 页面背景 *//* #body-wrap {background: linear-gradient(90deg, #92acd9, #c8d6ae);} */#body-wrap {background: linear-gradient(90deg,rgba(247, 149, 51, 0.1) 0,rgba(243, 112, 85, 0.1) 15%,rgba(239, 78, 123, 0.1) 30%,rgba(161, 102, 171, 0.1) 44%,rgba(80, 115, 184, 0.1) 58%,rgba(16, 152, 173, 0.1) 72%,rgba(7, 179, 155, 0.1) 86%,rgba(109, 173, 186, 0.1) 100%);}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -227,17 +209,6 @@
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
