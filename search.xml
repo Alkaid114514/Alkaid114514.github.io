@@ -5,6 +5,35 @@
     
     <entry>
       
+        <title>欧拉方程</title>
+      
+      <link href="/2025/01/10/2501101634/"/>
+      <url>/2025/01/10/2501101634/</url>
+      
+        <content type="html"><![CDATA[<h2 id="定义">定义</h2><p>称<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathsize="1.2em"><msup><mi>x</mi><mi>n</mi></msup><msup><mi>y</mi><mrow><mo fence="true">(</mo><mi>n</mi><mo fence="true">)</mo></mrow></msup><mo>+</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><msup><mi>y</mi><mrow><mo fence="true">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo fence="true">)</mo></mrow></msup><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>x</mi><mi>y</mi><mo mathvariant="normal">′</mo><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub><mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">\large x^{n}y^{\left ( n \right )}+a_{n-1}x^{n-1}y^{\left ( n-1 \right )}+\cdots +a_{1}xy\prime +a_{0}y=f(x)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.2224994285714283em;vertical-align:-0.23332799999999998em;"></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.65004em;"><span style="top:-3.163em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span></span></span></span></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8243095238095237em;"><span style="top:-3.163em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="minner mtight"><span class="mopen sizing reset-size4 size3 mtight delimcenter" style="top:-0.035714285714285754em;"><span class="mtight">(</span></span><span class="mord mathdefault mtight">n</span><span class="mclose sizing reset-size4 size3 mtight delimcenter" style="top:-0.035714285714285754em;"><span class="mtight">)</span></span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin sizing reset-size6 size7">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.2358354285714284em;vertical-align:-0.246664em;"></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2796266666666667em;"><span style="top:-2.6499999999999995em;margin-left:0em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.20555333333333334em;"><span></span></span></span></span></span></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7926266666666667em;"><span style="top:-3.1629999999999994em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8243095238095237em;"><span style="top:-3.163em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="minner mtight"><span class="mopen sizing reset-size4 size3 mtight delimcenter" style="top:-0.035714285714285754em;"><span class="mtight">(</span></span><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span><span class="mclose sizing reset-size4 size3 mtight delimcenter" style="top:-0.035714285714285754em;"><span class="mtight">)</span></span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin sizing reset-size6 size7">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.7999919999999999em;vertical-align:-0.099996em;"></span><span class="minner sizing reset-size6 size7">⋯</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin sizing reset-size6 size7">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.9333239999999999em;vertical-align:-0.23332799999999998em;"></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2796266666666667em;"><span style="top:-2.65em;margin-left:0em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault sizing reset-size6 size7">x</span><span class="mord mathdefault sizing reset-size6 size7" style="margin-right:0.03588em;">y</span><span class="mord sizing reset-size6 size7">′</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin sizing reset-size6 size7">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.75em;vertical-align:-0.23332799999999998em;"></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2796266666666667em;"><span style="top:-2.65em;margin-left:0em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault sizing reset-size6 size7" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel sizing reset-size6 size7">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.2em;vertical-align:-0.3em;"></span><span class="mord mathdefault sizing reset-size6 size7" style="margin-right:0.10764em;">f</span><span class="mopen sizing reset-size6 size7">(</span><span class="mord mathdefault sizing reset-size6 size7">x</span><span class="mclose sizing reset-size6 size7">)</span></span></span></span>为欧拉方程<br>其中<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mstyle mathsize="1.2em"><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><mo>⋯</mo><mtext> </mtext><mo separator="true">,</mo><msub><mi>a</mi><mn>1</mn></msub><mo separator="true">,</mo><mi>a</mi><mn>0</mn><mtext>为常数</mtext></mstyle></mrow><annotation encoding="application/x-tex">\large a_{n-1},\cdots,a_{1},a{0}为常数</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.06666em;vertical-align:-0.246664em;"></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2796266666666667em;"><span style="top:-2.6499999999999995em;margin-left:0em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.20555333333333334em;"><span></span></span></span></span></span></span><span class="mpunct sizing reset-size6 size7">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner sizing reset-size6 size7">⋯</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace sizing reset-size6 size7" style="margin-right:0.16666666666666666em;"></span><span class="mpunct sizing reset-size6 size7">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord sizing reset-size6 size7"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2796266666666667em;"><span style="top:-2.65em;margin-left:0em;margin-right:0.04166666666666667em;"><span class="pstrut" style="height:2.8em;"></span><span class="sizing reset-size7 size4 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct sizing reset-size6 size7">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault sizing reset-size6 size7">a</span><span class="mord sizing reset-size6 size7"><span class="mord">0</span></span><span class="mord cjk_fallback sizing reset-size6 size7">为</span><span class="mord cjk_fallback sizing reset-size6 size7">常</span><span class="mord cjk_fallback sizing reset-size6 size7">数</span></span></span></span><br>解法：</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大学数学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 大学 </tag>
+            
+            <tag> 微积分 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      
         <title>常系数(非)齐次线性微分方程</title>
       
       <link href="/2025/01/09/2501091825/"/>
@@ -309,6 +338,39 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/card_border_radius.css"/>
+      <url>/css/card_border_radius.css</url>
+      
+        <content type="html"><![CDATA[.cardHover, .layout > div:first-child:not(.nc), #recent-posts .recent-post-item, #article-container .shuoshuo-item, #aside-content .card-widget, .layout .pagination > *:not(.space) {    border-radius: 18px;    backdrop-filter: blur(8px);    transition: opacity 0.3s,background-color 0.3s;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/card_background.css"/>
+      <url>/css/card_background.css</url>
+      
+        <content type="html"><![CDATA[[data-theme='dark'] {    --card-bg: #121212bc;}[data-theme='light'] {    --card-bg: #ffffff88;}.layout {    max-width: 1300px;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/post_title_center.css"/>
+      <url>/css/post_title_center.css</url>
+      
+        <content type="html"><![CDATA[#page-header #post-info > * {    margin: 36px auto;    text-align: center;}]]></content>
       
     </entry>
     

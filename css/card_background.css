@@ -1,0 +1,11 @@
+[data-theme='dark'] {
+    --card-bg: #121212bc;
+}
+
+[data-theme='light'] {
+    --card-bg: #ffffff88;
+}
+
+.layout {
+    max-width: 1300px;
+}
