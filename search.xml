@@ -339,22 +339,11 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>时间轴</title>
+      <link href="/archives/index.html"/>
+      <url>/archives/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/card_background.css"/>
-      <url>/css/card_background.css</url>
-      
-        <content type="html"><![CDATA[[data-theme='dark'] {    --card-bg: #121212bc;}[data-theme='light'] {    --card-bg: #ffffff88;}.layout {    max-width: 1300px;}]]></content>
       
     </entry>
     
@@ -366,6 +355,17 @@
       <url>/css/background_color.css</url>
       
         <content type="html"><![CDATA[/* 页面背景 *//* #body-wrap {background: linear-gradient(90deg, #92acd9, #c8d6ae);} */#body-wrap {background: linear-gradient(90deg,rgba(247, 149, 51, 0.1) 0,rgba(243, 112, 85, 0.1) 15%,rgba(239, 78, 123, 0.1) 30%,rgba(161, 102, 171, 0.1) 44%,rgba(80, 115, 184, 0.1) 58%,rgba(16, 152, 173, 0.1) 72%,rgba(7, 179, 155, 0.1) 86%,rgba(109, 173, 186, 0.1) 100%);}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/card_background.css"/>
+      <url>/css/card_background.css</url>
+      
+        <content type="html"><![CDATA[[data-theme='dark'] {    --card-bg: #121212bc;    --svg-color: #fff;}[data-theme='light'] {    --card-bg: #ffffff88;    --svg-color: #000;}.layout {    max-width: 1300px;}svg path {    stroke: var(--svg-color);  }]]></content>
       
     </entry>
     
@@ -405,11 +405,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/card_border_radius.css"/>
-      <url>/css/card_border_radius.css</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[.cardHover, .layout > div:first-child:not(.nc), #recent-posts .recent-post-item, #article-container .shuoshuo-item, #aside-content .card-widget, .layout .pagination > *:not(.space) {    border-radius: 18px;    backdrop-filter: blur(8px);    transition: opacity 0.3s,background-color 0.3s;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -427,11 +427,11 @@
     
     
     <entry>
-      <title>时间轴</title>
-      <link href="/archives/index.html"/>
-      <url>/archives/index.html</url>
+      <title></title>
+      <link href="/css/card_border_radius.css"/>
+      <url>/css/card_border_radius.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[.cardHover, .layout > div:first-child:not(.nc), #recent-posts .recent-post-item, #article-container .shuoshuo-item, #aside-content .card-widget, .layout .pagination > *:not(.space) {    border-radius: 18px;    backdrop-filter: blur(8px);    transition: opacity 0.3s,background-color 0.3s;}]]></content>
       
     </entry>
     
