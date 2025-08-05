@@ -1,0 +1,17 @@
+[data-theme='dark'] {
+    --card-bg: #121212bc;
+    --svg-color: #fff;
+}
+
+[data-theme='light'] {
+    --card-bg: #ffffff88;
+    --svg-color: #000;
+}
+
+.layout {
+    max-width: 1300px;
+}
+
+svg path {
+    stroke: var(--svg-color);
+  }

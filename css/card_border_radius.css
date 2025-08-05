@@ -1,0 +1,5 @@
+.cardHover, .layout > div:first-child:not(.nc), #recent-posts .recent-post-item, #article-container .shuoshuo-item, #aside-content .card-widget, .layout .pagination > *:not(.space) {
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+    transition: opacity 0.3s,background-color 0.3s;
+}
